@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension Array where Element: Comparable & Equatable {
+extension Array where Element: Comparable {
   
   // Less faster using swapAt
 //  func insertionSort() -> [Element] {
