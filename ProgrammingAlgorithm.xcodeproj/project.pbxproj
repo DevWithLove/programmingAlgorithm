@@ -27,6 +27,9 @@
 		02FE9AA721892D5C001D4CC9 /* SortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE9AA621892D5C001D4CC9 /* SortingTests.swift */; };
 		21735F40F138A450B8686357 /* Pods_ProgrammingAlgorithm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF920D57611A482A82BE32E9 /* Pods_ProgrammingAlgorithm.framework */; };
 		2D634A362E348CCED00783B7 /* Pods_ProgrammingAlgorithmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54ED17ABE0E0E63FD3872B1 /* Pods_ProgrammingAlgorithmTests.framework */; };
+		C24935FB2208C3BB005D0516 /* CodingPracticesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24935FA2208C3BB005D0516 /* CodingPracticesTests.swift */; };
+		C24935FD2208C48D005D0516 /* CodingPractices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24935FC2208C48D005D0516 /* CodingPractices.swift */; };
+		C24935FE2208C842005D0516 /* CodingPractices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24935FC2208C48D005D0516 /* CodingPractices.swift */; };
 		C2E36D4B2203D436000CE36B /* KeyPathSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E36D4A2203D436000CE36B /* KeyPathSample.swift */; };
 		C2E36D4C2203D436000CE36B /* KeyPathSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E36D4A2203D436000CE36B /* KeyPathSample.swift */; };
 		C2E36D4F2203D5E9000CE36B /* KeyPathSampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E36D4E2203D5E9000CE36B /* KeyPathSampleTest.swift */; };
@@ -63,6 +66,8 @@
 		203B8025B5E601591443F8A5 /* Pods-ProgrammingAlgorithm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammingAlgorithm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProgrammingAlgorithm/Pods-ProgrammingAlgorithm.debug.xcconfig"; sourceTree = "<group>"; };
 		90798C78D47370F2476F46F0 /* Pods-ProgrammingAlgorithm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammingAlgorithm.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProgrammingAlgorithm/Pods-ProgrammingAlgorithm.release.xcconfig"; sourceTree = "<group>"; };
 		B88FEEE5520D33FDBF738D40 /* Pods-ProgrammingAlgorithmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammingAlgorithmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProgrammingAlgorithmTests/Pods-ProgrammingAlgorithmTests.release.xcconfig"; sourceTree = "<group>"; };
+		C24935FA2208C3BB005D0516 /* CodingPracticesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingPracticesTests.swift; sourceTree = "<group>"; };
+		C24935FC2208C48D005D0516 /* CodingPractices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingPractices.swift; sourceTree = "<group>"; };
 		C2E36D4A2203D436000CE36B /* KeyPathSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathSample.swift; sourceTree = "<group>"; };
 		C2E36D4E2203D5E9000CE36B /* KeyPathSampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathSampleTest.swift; sourceTree = "<group>"; };
 		D1BD7F4876578321272428E2 /* Pods-ProgrammingAlgorithmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammingAlgorithmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProgrammingAlgorithmTests/Pods-ProgrammingAlgorithmTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +179,7 @@
 				02FE9AA121892A12001D4CC9 /* Sorting */,
 				02CD4D732187F65E00C1DA1D /* DataStructures */,
 				0284CDCB2187C326008B1A13 /* ArrayCompare */,
+				C24935FC2208C48D005D0516 /* CodingPractices.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -200,6 +206,7 @@
 				024FE0E4218A33BA00A174D1 /* Search */,
 				02FE9AA521892D40001D4CC9 /* Sorting */,
 				0284CDD02187C4D1008B1A13 /* ArrayCompare */,
+				C24935FA2208C3BB005D0516 /* CodingPracticesTests.swift */,
 			);
 			path = Algorithms;
 			sourceTree = "<group>";
@@ -435,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02FE9AA321892AA7001D4CC9 /* InsertionSort.swift in Sources */,
+				C24935FD2208C48D005D0516 /* CodingPractices.swift in Sources */,
 				02CD4D782187FAB700C1DA1D /* Queue.swift in Sources */,
 				02CD4D752187F96C00C1DA1D /* Stack.swift in Sources */,
 				0284CDAA2187C1F0008B1A13 /* ViewController.swift in Sources */,
@@ -459,6 +467,8 @@
 				024FE0E6218A33CC00A174D1 /* Searching.swift in Sources */,
 				C2E36D4C2203D436000CE36B /* KeyPathSample.swift in Sources */,
 				02FE9AA421892AA7001D4CC9 /* InsertionSort.swift in Sources */,
+				C24935FE2208C842005D0516 /* CodingPractices.swift in Sources */,
+				C24935FB2208C3BB005D0516 /* CodingPracticesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
