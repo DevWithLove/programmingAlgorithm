@@ -10,11 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
   }
-
+ 
+// If not using auto layout
+//  override func viewWillLayoutSubviews() {
+//    self.emailField.frame = CGRect(x: self.view.bounds.width/2 - 100, y: self.view.center.y - 20, width: 200, height: 40 )
+//    self.passwordField.frame = CGRect(x: self.view.bounds.width/2 - 100, y: self.view.center.y + 20, width: 200, height: 40)
+//  }
+  
+  
 
 }
 

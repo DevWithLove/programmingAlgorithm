@@ -22,6 +22,7 @@
 		02CD4D762187F96C00C1DA1D /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD4D742187F96B00C1DA1D /* Stack.swift */; };
 		02CD4D782187FAB700C1DA1D /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD4D772187FAB700C1DA1D /* Queue.swift */; };
 		02CD4D792187FAB700C1DA1D /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CD4D772187FAB700C1DA1D /* Queue.swift */; };
+		02E90446220FC68700D32963 /* LogInField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E90445220FC68700D32963 /* LogInField.swift */; };
 		02FE9AA321892AA7001D4CC9 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE9AA221892AA7001D4CC9 /* InsertionSort.swift */; };
 		02FE9AA421892AA7001D4CC9 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE9AA221892AA7001D4CC9 /* InsertionSort.swift */; };
 		02FE9AA721892D5C001D4CC9 /* SortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE9AA621892D5C001D4CC9 /* SortingTests.swift */; };
@@ -61,6 +62,7 @@
 		0284CDD12187C508008B1A13 /* ArrayCompareWithComparebleElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCompareWithComparebleElementsTests.swift; sourceTree = "<group>"; };
 		02CD4D742187F96B00C1DA1D /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		02CD4D772187FAB700C1DA1D /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		02E90445220FC68700D32963 /* LogInField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInField.swift; sourceTree = "<group>"; };
 		02FE9AA221892AA7001D4CC9 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		02FE9AA621892D5C001D4CC9 /* SortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingTests.swift; sourceTree = "<group>"; };
 		203B8025B5E601591443F8A5 /* Pods-ProgrammingAlgorithm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammingAlgorithm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProgrammingAlgorithm/Pods-ProgrammingAlgorithm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		0284CDA62187C1F0008B1A13 /* ProgrammingAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				02E90444220FC33E00D32963 /* CustomView */,
 				0284CDC82187C237008B1A13 /* Classes */,
 				0284CDC72187C21F008B1A13 /* Resources */,
 				0284CDAB2187C1F0008B1A13 /* Main.storyboard */,
@@ -226,6 +229,14 @@
 				02CD4D772187FAB700C1DA1D /* Queue.swift */,
 			);
 			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		02E90444220FC33E00D32963 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				02E90445220FC68700D32963 /* LogInField.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		02FE9AA121892A12001D4CC9 /* Sorting */ = {
@@ -443,6 +454,7 @@
 			files = (
 				02FE9AA321892AA7001D4CC9 /* InsertionSort.swift in Sources */,
 				C24935FD2208C48D005D0516 /* CodingPractices.swift in Sources */,
+				02E90446220FC68700D32963 /* LogInField.swift in Sources */,
 				02CD4D782187FAB700C1DA1D /* Queue.swift in Sources */,
 				02CD4D752187F96C00C1DA1D /* Stack.swift in Sources */,
 				0284CDAA2187C1F0008B1A13 /* ViewController.swift in Sources */,
@@ -624,7 +636,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QS92QDAJH6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ProgrammingAlgorithm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -643,7 +655,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QS92QDAJH6;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ProgrammingAlgorithm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
