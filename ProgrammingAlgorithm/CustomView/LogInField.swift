@@ -15,10 +15,10 @@ enum FieldType {
 
 @IBDesignable
 class LogInField: UIView {
-
+  
   // MARK: Properties
   var fieldType: FieldType = .email
- 
+  
   @IBInspectable var isEmailType: Bool = true
   
   private let topLabel: UILabel = UILabel()
@@ -76,6 +76,50 @@ class LogInField: UIView {
     self.bottomLineView.frame = CGRect(x: 0, y: self.bounds.height, width: self.bounds.width, height: 1)
     
   }
+  
+  // MARK: Invalid Input Animation
+  private func animateInvalidEmailInput() {
+    
+    self.topLabel.textColor = UIColor.red
+    
+    CATransaction.begin()
+    CATransaction.setCompletionBlock {
+      self.topLabel.textColor = UIColor.lightGray
+    }
+    
+    let animation = CABasicAnimation(keyPath: "position")
+    animation.duration = 0.05
+    animation.fromValue = NSValue(cgPoint: CGPoint(x: self.topLabel.center.x - 8, y: self.topLabel.center.y))
+    animation.toValue = NSValue(cgPoint: CGPoint(x: self.topLabel.center.x + 8, y: self.topLabel.center.y))
+    animation.repeatCount = 5
+    animation.autoreverses = true
+    self.topLabel.layer.add(animation, forKey: "position")
+    CATransaction.commit()
+    
+  }
+  
+  func executeClosureIfEmailIsValid(onValidComplete:()->()) {
+   
+    guard fieldType == .email else {
+      return
+    }
+    
+    guard let text = self.inputTextField.text, !text.isEmpty else {
+      return
+    }
+    
+    do{
+      let emailRegex = try NSRegularExpression(pattern: "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$", options: .caseInsensitive)
+      if emailRegex.firstMatch(in: text, options: [], range: NSMakeRange(0, text.count)) != nil {
+        onValidComplete()
+      }else{
+        self.animateInvalidEmailInput()
+      }
+    }catch{
+      self.animateInvalidEmailInput()
+    }
+  }
+  
 }
 
 // MARK: UITextField Delegate
@@ -86,7 +130,7 @@ extension LogInField: UITextFieldDelegate {
     if !(textField.text?.isEmpty ?? true) {
       self.topLabel.textColor = UIColor.blue
     }
-  
+    
   }
   
   func textFieldDidEndEditing(_ textField: UITextField) {

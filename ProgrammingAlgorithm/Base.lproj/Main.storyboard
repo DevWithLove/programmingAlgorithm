@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5pQ-4X-n0a">
-                                <rect key="frame" x="10" y="30" width="355" height="92"/>
+                                <rect key="frame" x="10" y="30" width="355" height="134"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DC9-00-21u" customClass="LogInField" customModule="ProgrammingAlgorithm" customModuleProvider="target">
                                         <rect key="frame" x="77.5" y="0.0" width="200" height="40"/>
@@ -34,6 +34,13 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isEmailType" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwj-gn-isW">
+                                        <rect key="frame" x="158.5" y="104" width="38" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="attempLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sld-Nm-Q2u"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -45,6 +52,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="LoginButton" destination="iwj-gn-isW" id="kn5-si-i7J"/>
+                        <outlet property="emailLoginField" destination="DC9-00-21u" id="Tkn-oh-AvK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

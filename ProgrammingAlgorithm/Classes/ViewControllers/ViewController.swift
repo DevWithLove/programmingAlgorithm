@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet weak var emailLoginField: LogInField!
+  @IBOutlet weak var LoginButton: UIButton!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -22,6 +24,11 @@ class ViewController: UIViewController {
 //  }
   
   
-
+  @IBAction func attempLogin(_ sender: Any) {
+    emailLoginField.executeClosureIfEmailIsValid {
+       LoginButton.setTitle("It worked", for: .normal)
+    }
+  }
+  
 }
 
