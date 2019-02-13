@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021D5DCA221410B100B7BD53 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DC9221410B100B7BD53 /* Singleton.swift */; };
+		021D5DCB221410B100B7BD53 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DC9221410B100B7BD53 /* Singleton.swift */; };
+		021D5DCE2214131C00B7BD53 /* SingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DCD2214131C00B7BD53 /* SingletonTests.swift */; };
 		024FE0E2218A303800A174D1 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FE0E1218A303800A174D1 /* BinarySearch.swift */; };
 		024FE0E3218A303800A174D1 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FE0E1218A303800A174D1 /* BinarySearch.swift */; };
 		024FE0E6218A33CC00A174D1 /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FE0E5218A33CC00A174D1 /* Searching.swift */; };
@@ -47,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021D5DC9221410B100B7BD53 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		021D5DCD2214131C00B7BD53 /* SingletonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonTests.swift; sourceTree = "<group>"; };
 		024FE0E1218A303800A174D1 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		024FE0E5218A33CC00A174D1 /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
 		0284CDA42187C1F0008B1A13 /* ProgrammingAlgorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammingAlgorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021D5DC822140EAB00B7BD53 /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				021D5DC9221410B100B7BD53 /* Singleton.swift */,
+			);
+			path = DesignPattern;
+			sourceTree = "<group>";
+		};
+		021D5DCC221412E800B7BD53 /* DesignPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				021D5DCD2214131C00B7BD53 /* SingletonTests.swift */,
+			);
+			path = DesignPatterns;
+			sourceTree = "<group>";
+		};
 		024FE0E0218A2E2B00A174D1 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +157,6 @@
 		0284CDA62187C1F0008B1A13 /* ProgrammingAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
-				02E90444220FC33E00D32963 /* CustomView */,
 				0284CDC82187C237008B1A13 /* Classes */,
 				0284CDC72187C21F008B1A13 /* Resources */,
 				0284CDAB2187C1F0008B1A13 /* Main.storyboard */,
@@ -149,6 +169,7 @@
 		0284CDBB2187C1F2008B1A13 /* ProgrammingAlgorithmTests */ = {
 			isa = PBXGroup;
 			children = (
+				021D5DCC221412E800B7BD53 /* DesignPatterns */,
 				C2E36D4D2203D5C9000CE36B /* Features */,
 				0284CDCF2187C4C2008B1A13 /* Algorithms */,
 				0284CDBE2187C1F2008B1A13 /* Info.plist */,
@@ -167,6 +188,8 @@
 		0284CDC82187C237008B1A13 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				021D5DC822140EAB00B7BD53 /* DesignPattern */,
+				02E90444220FC33E00D32963 /* CustomView */,
 				C2E36D492203D3EC000CE36B /* Features */,
 				0284CDC92187C25B008B1A13 /* Algorithms */,
 				0284CDCA2187C29E008B1A13 /* ViewControllers */,
@@ -458,6 +481,7 @@
 				02CD4D782187FAB700C1DA1D /* Queue.swift in Sources */,
 				02CD4D752187F96C00C1DA1D /* Stack.swift in Sources */,
 				0284CDAA2187C1F0008B1A13 /* ViewController.swift in Sources */,
+				021D5DCA221410B100B7BD53 /* Singleton.swift in Sources */,
 				024FE0E2218A303800A174D1 /* BinarySearch.swift in Sources */,
 				0284CDA82187C1F0008B1A13 /* AppDelegate.swift in Sources */,
 				C2E36D4B2203D436000CE36B /* KeyPathSample.swift in Sources */,
@@ -474,7 +498,9 @@
 				0284CDCE2187C3C0008B1A13 /* ArrayCompareExtensions.swift in Sources */,
 				02CD4D792187FAB700C1DA1D /* Queue.swift in Sources */,
 				024FE0E3218A303800A174D1 /* BinarySearch.swift in Sources */,
+				021D5DCB221410B100B7BD53 /* Singleton.swift in Sources */,
 				02FE9AA721892D5C001D4CC9 /* SortingTests.swift in Sources */,
+				021D5DCE2214131C00B7BD53 /* SingletonTests.swift in Sources */,
 				C2E36D4F2203D5E9000CE36B /* KeyPathSampleTest.swift in Sources */,
 				024FE0E6218A33CC00A174D1 /* Searching.swift in Sources */,
 				C2E36D4C2203D436000CE36B /* KeyPathSample.swift in Sources */,
