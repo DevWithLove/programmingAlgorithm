@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020C3FE6221698210046A909 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C3FE5221698210046A909 /* Builder.swift */; };
+		020C3FE822169E710046A909 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020C3FE722169E710046A909 /* Factory.swift */; };
 		021D5DCA221410B100B7BD53 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DC9221410B100B7BD53 /* Singleton.swift */; };
 		021D5DCB221410B100B7BD53 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DC9221410B100B7BD53 /* Singleton.swift */; };
 		021D5DCE2214131C00B7BD53 /* SingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DCD2214131C00B7BD53 /* SingletonTests.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020C3FE5221698210046A909 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		020C3FE722169E710046A909 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		021D5DC9221410B100B7BD53 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		021D5DCD2214131C00B7BD53 /* SingletonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonTests.swift; sourceTree = "<group>"; };
 		0233313E22154FFA009ACFA2 /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 			children = (
 				021D5DCD2214131C00B7BD53 /* SingletonTests.swift */,
 				0233314122155731009ACFA2 /* PrototypeTests.swift */,
+				020C3FE5221698210046A909 /* Builder.swift */,
+				020C3FE722169E710046A909 /* Factory.swift */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -516,12 +522,14 @@
 				024FE0E3218A303800A174D1 /* BinarySearch.swift in Sources */,
 				021D5DCB221410B100B7BD53 /* Singleton.swift in Sources */,
 				02FE9AA721892D5C001D4CC9 /* SortingTests.swift in Sources */,
+				020C3FE6221698210046A909 /* Builder.swift in Sources */,
 				021D5DCE2214131C00B7BD53 /* SingletonTests.swift in Sources */,
 				0233314322155731009ACFA2 /* PrototypeTests.swift in Sources */,
 				C2E36D4F2203D5E9000CE36B /* KeyPathSampleTest.swift in Sources */,
 				024FE0E6218A33CC00A174D1 /* Searching.swift in Sources */,
 				C2E36D4C2203D436000CE36B /* KeyPathSample.swift in Sources */,
 				0233314022154FFA009ACFA2 /* Prototype.swift in Sources */,
+				020C3FE822169E710046A909 /* Factory.swift in Sources */,
 				02FE9AA421892AA7001D4CC9 /* InsertionSort.swift in Sources */,
 				C24935FE2208C842005D0516 /* CodingPractices.swift in Sources */,
 				C24935FB2208C3BB005D0516 /* CodingPracticesTests.swift in Sources */,
