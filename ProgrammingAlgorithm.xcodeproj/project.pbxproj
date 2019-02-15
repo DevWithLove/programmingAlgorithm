@@ -10,6 +10,9 @@
 		021D5DCA221410B100B7BD53 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DC9221410B100B7BD53 /* Singleton.swift */; };
 		021D5DCB221410B100B7BD53 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DC9221410B100B7BD53 /* Singleton.swift */; };
 		021D5DCE2214131C00B7BD53 /* SingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DCD2214131C00B7BD53 /* SingletonTests.swift */; };
+		0233313F22154FFA009ACFA2 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0233313E22154FFA009ACFA2 /* Prototype.swift */; };
+		0233314022154FFA009ACFA2 /* Prototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0233313E22154FFA009ACFA2 /* Prototype.swift */; };
+		0233314322155731009ACFA2 /* PrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0233314122155731009ACFA2 /* PrototypeTests.swift */; };
 		024FE0E2218A303800A174D1 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FE0E1218A303800A174D1 /* BinarySearch.swift */; };
 		024FE0E3218A303800A174D1 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FE0E1218A303800A174D1 /* BinarySearch.swift */; };
 		024FE0E6218A33CC00A174D1 /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FE0E5218A33CC00A174D1 /* Searching.swift */; };
@@ -52,6 +55,8 @@
 /* Begin PBXFileReference section */
 		021D5DC9221410B100B7BD53 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		021D5DCD2214131C00B7BD53 /* SingletonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonTests.swift; sourceTree = "<group>"; };
+		0233313E22154FFA009ACFA2 /* Prototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prototype.swift; sourceTree = "<group>"; };
+		0233314122155731009ACFA2 /* PrototypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeTests.swift; sourceTree = "<group>"; };
 		024FE0E1218A303800A174D1 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		024FE0E5218A33CC00A174D1 /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
 		0284CDA42187C1F0008B1A13 /* ProgrammingAlgorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammingAlgorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +110,7 @@
 		021D5DC822140EAB00B7BD53 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
-				021D5DC9221410B100B7BD53 /* Singleton.swift */,
+				0233313D22154FC1009ACFA2 /* Creational */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -114,8 +119,18 @@
 			isa = PBXGroup;
 			children = (
 				021D5DCD2214131C00B7BD53 /* SingletonTests.swift */,
+				0233314122155731009ACFA2 /* PrototypeTests.swift */,
 			);
 			path = DesignPatterns;
+			sourceTree = "<group>";
+		};
+		0233313D22154FC1009ACFA2 /* Creational */ = {
+			isa = PBXGroup;
+			children = (
+				021D5DC9221410B100B7BD53 /* Singleton.swift */,
+				0233313E22154FFA009ACFA2 /* Prototype.swift */,
+			);
+			path = Creational;
 			sourceTree = "<group>";
 		};
 		024FE0E0218A2E2B00A174D1 /* Search */ = {
@@ -483,6 +498,7 @@
 				0284CDAA2187C1F0008B1A13 /* ViewController.swift in Sources */,
 				021D5DCA221410B100B7BD53 /* Singleton.swift in Sources */,
 				024FE0E2218A303800A174D1 /* BinarySearch.swift in Sources */,
+				0233313F22154FFA009ACFA2 /* Prototype.swift in Sources */,
 				0284CDA82187C1F0008B1A13 /* AppDelegate.swift in Sources */,
 				C2E36D4B2203D436000CE36B /* KeyPathSample.swift in Sources */,
 				0284CDCD2187C3C0008B1A13 /* ArrayCompareExtensions.swift in Sources */,
@@ -501,9 +517,11 @@
 				021D5DCB221410B100B7BD53 /* Singleton.swift in Sources */,
 				02FE9AA721892D5C001D4CC9 /* SortingTests.swift in Sources */,
 				021D5DCE2214131C00B7BD53 /* SingletonTests.swift in Sources */,
+				0233314322155731009ACFA2 /* PrototypeTests.swift in Sources */,
 				C2E36D4F2203D5E9000CE36B /* KeyPathSampleTest.swift in Sources */,
 				024FE0E6218A33CC00A174D1 /* Searching.swift in Sources */,
 				C2E36D4C2203D436000CE36B /* KeyPathSample.swift in Sources */,
+				0233314022154FFA009ACFA2 /* Prototype.swift in Sources */,
 				02FE9AA421892AA7001D4CC9 /* InsertionSort.swift in Sources */,
 				C24935FE2208C842005D0516 /* CodingPractices.swift in Sources */,
 				C24935FB2208C3BB005D0516 /* CodingPracticesTests.swift in Sources */,
