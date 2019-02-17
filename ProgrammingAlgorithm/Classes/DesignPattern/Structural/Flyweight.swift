@@ -45,7 +45,7 @@ extension OSLogType: CustomStringConvertible {
   public var description: String {
     switch self {
     case OSLogType.info:
-      return "INFO"
+      return "👻"
     case OSLogType.debug:
       return "DEBUG"
     case OSLogType.error:
@@ -89,7 +89,7 @@ public class FlyweightLoggerFactory {
         if let logger = loggersByID[key] {
           result = logger
         } else {
-          result = logger(subsystem: subsystem, category: category)
+          result = Logger(subsystem: subsystem, category: category)
           loggersByID[key] = result
         }
     }

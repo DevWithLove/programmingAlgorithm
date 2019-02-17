@@ -15,6 +15,8 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    let logger = FlyweightLoggerFactory.shared.logger(subsystem: Bundle.main.bundleIdentifier!,category: "test")
+    logger?.log("test", type: .info)
   }
  
 // If not using auto layout
