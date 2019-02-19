@@ -243,3 +243,114 @@ struct WeatherServiceWrapper: WeatherService {
 
 // See the AppDelegate file
 
+//MARK: MoneyPile Example
+
+protocol MoneyPile {
+    var value: Int {get}
+    var quantity: Int {get set}
+    var nextPile: MoneyPile? {get set}
+    // designated initializer which will ensure that your class or structer type will instantiate correctly
+    init()
+    func canWithdraw(amount: Int) -> Bool
+}
+
+extension MoneyPile {
+// variable cannot be initialized in the protocol extenstion because its declared as constant {get}
+// Because the protocol is not concrete type, you cannot initialize an instance of P. you can only initialize a concrete type, an associated type or generic type.
+    
+    init(quantity:Int, nextPile: MoneyPile?) {
+        self.init()
+        self.quantity = quantity
+        self.nextPile = nextPile
+    }
+    
+    func canWithdraw(amount: Int) -> Bool {
+        var amount = amount
+        var quantity = self.quantity
+  
+        func canTakeSomeBill(want: Int) -> Bool {
+            return ( want / value ) > 0
+        }
+        
+        while canTakeSomeBill(want: amount) {
+            if quantity == 0 {
+                break
+            }
+            
+            amount -= self.value
+            quantity -= 1
+        }
+        
+        guard amount > 0 else {
+            return true
+        }
+        
+        if let next = self.nextPile {
+            return next.canWithdraw(amount: amount)
+        }
+        
+        return false
+    }
+}
+
+final class MoneyPileFor10: MoneyPile {
+    let value: Int = 10
+    var quantity: Int = 0
+    var nextPile: MoneyPile?
+}
+
+final class MoneyPileFor20: MoneyPile {
+    let value: Int = 20
+    var quantity: Int = 0
+    var nextPile: MoneyPile?
+}
+
+final class MoneyPileFor50: MoneyPile {
+    let value: Int = 50
+    var quantity: Int = 0
+    var nextPile: MoneyPile?
+}
+
+final class MoneyPileFor100: MoneyPile {
+    let value: Int = 100
+    var quantity: Int = 0
+    var nextPile: MoneyPile?
+}
+
+final class ATM {
+    private var hundred: MoneyPile
+    private var fifty: MoneyPile
+    private var twenty: MoneyPile
+    private var ten: MoneyPile
+    
+    private var startPile: MoneyPile {
+        return self.hundred
+    }
+    
+    init(hundred: MoneyPile,
+         fifty: MoneyPile,
+         twenty: MoneyPile,
+         ten: MoneyPile) {
+        
+        self.hundred = hundred
+        self.fifty = fifty
+        self.twenty = twenty
+        self.ten = ten
+    }
+    
+    func canWithdraw(amount: Int) -> String {
+        return "Can withdraw: \(self.startPile.canWithdraw(amount: amount))"
+    }
+}
+
+
+fileprivate func MoneyPileUsage(){
+    let ten = MoneyPileFor10(quantity: 6, nextPile: nil)
+    let twenty = MoneyPileFor20(quantity: 2, nextPile: ten)
+    let fifty = MoneyPileFor50(quantity: 2, nextPile: twenty)
+    let hundred = MoneyPileFor100(quantity: 1, nextPile: fifty)
+    
+    let atm = ATM(hundred: hundred, fifty: fifty, twenty: twenty, ten: ten)
+    _ = atm.canWithdraw(amount: 310)
+    _ = atm.canWithdraw(amount: 100)
+}
