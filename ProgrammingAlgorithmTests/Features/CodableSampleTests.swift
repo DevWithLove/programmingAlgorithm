@@ -105,4 +105,62 @@ class CodableSampleTests: XCTestCase {
             }
         }
     }
+    
+    func testEncode_nested_model() {
+        
+        //Lets create a product
+        let product = Product()
+        product.name = "Apple iPad Pro"
+        product.points = 100
+        product.productDescription = "iPad Gold, 256 GB, 10.5 Inch"
+        product.price = 850
+        
+        //And put it into a shelf
+        let shelf = Shelf()
+        shelf.name = "Electronics"
+        shelf.product.append(product)
+        
+        //Assigned to particular aisle
+        let aisle = Aisle()
+        aisle.name = "New Arrivals"
+        aisle.shelves.append(shelf)
+        
+        //In some supermarket
+        let superMarket = Supermarket()
+        superMarket.name = "Wallmart"
+        superMarket.phone = "9999999999"
+        superMarket.address = "Melville, NY"
+        superMarket.aisles.append(aisle)
+        
+        let encodedData = try? JSONEncoder().encode(superMarket)
+        if let encodedObjectJsonString = String(data: encodedData!, encoding: .utf8)
+        {
+            print(encodedObjectJsonString)
+        }
+    }
+    
+    func testDecode_nested_JSON() {
+        
+        let json = """
+                   {"phone":"9999999999","aisles":[{"name":"New Arrivals","shelves":[{"name":"Electronics","product":[{"points":100,"productDescription":"iPad Gold, 256 GB, 10.5 Inch","name":"Apple iPad Pro","price":850}]}]}],"name":"Wallmart","address":"Melville, NY"}
+                   """
+        
+        
+        if let jsonData = json.data(using: .utf8)
+        {
+            do {
+                //And here you get the Supermarket object back
+                let superMarketObject = try JSONDecoder().decode(Supermarket.self, from: jsonData)
+                
+                print(superMarketObject.aisles.count)
+                print(superMarketObject.aisles[0].shelves.count)
+                print(superMarketObject.aisles[0].shelves[0].product.count)
+                
+            }catch {
+                print(error)
+            }
+         
+        }
+        
+    }
 }
