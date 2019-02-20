@@ -51,6 +51,9 @@
 		02FE9AA721892D5C001D4CC9 /* SortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE9AA621892D5C001D4CC9 /* SortingTests.swift */; };
 		21735F40F138A450B8686357 /* Pods_ProgrammingAlgorithm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF920D57611A482A82BE32E9 /* Pods_ProgrammingAlgorithm.framework */; };
 		2D634A362E348CCED00783B7 /* Pods_ProgrammingAlgorithmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54ED17ABE0E0E63FD3872B1 /* Pods_ProgrammingAlgorithmTests.framework */; };
+		C241046A221CEB2E0047DB3B /* CodableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2410469221CEB2E0047DB3B /* CodableSample.swift */; };
+		C241046B221CEB2E0047DB3B /* CodableSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2410469221CEB2E0047DB3B /* CodableSample.swift */; };
+		C241046D221CED650047DB3B /* CodableSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C241046C221CED650047DB3B /* CodableSampleTests.swift */; };
 		C24935FB2208C3BB005D0516 /* CodingPracticesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24935FA2208C3BB005D0516 /* CodingPracticesTests.swift */; };
 		C24935FD2208C48D005D0516 /* CodingPractices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24935FC2208C48D005D0516 /* CodingPractices.swift */; };
 		C24935FE2208C842005D0516 /* CodingPractices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24935FC2208C48D005D0516 /* CodingPractices.swift */; };
@@ -108,6 +111,8 @@
 		203B8025B5E601591443F8A5 /* Pods-ProgrammingAlgorithm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammingAlgorithm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProgrammingAlgorithm/Pods-ProgrammingAlgorithm.debug.xcconfig"; sourceTree = "<group>"; };
 		90798C78D47370F2476F46F0 /* Pods-ProgrammingAlgorithm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammingAlgorithm.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProgrammingAlgorithm/Pods-ProgrammingAlgorithm.release.xcconfig"; sourceTree = "<group>"; };
 		B88FEEE5520D33FDBF738D40 /* Pods-ProgrammingAlgorithmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammingAlgorithmTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProgrammingAlgorithmTests/Pods-ProgrammingAlgorithmTests.release.xcconfig"; sourceTree = "<group>"; };
+		C2410469221CEB2E0047DB3B /* CodableSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSample.swift; sourceTree = "<group>"; };
+		C241046C221CED650047DB3B /* CodableSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSampleTests.swift; sourceTree = "<group>"; };
 		C24935FA2208C3BB005D0516 /* CodingPracticesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingPracticesTests.swift; sourceTree = "<group>"; };
 		C24935FC2208C48D005D0516 /* CodingPractices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingPractices.swift; sourceTree = "<group>"; };
 		C2E36D4A2203D436000CE36B /* KeyPathSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathSample.swift; sourceTree = "<group>"; };
@@ -376,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				C2E36D4A2203D436000CE36B /* KeyPathSample.swift */,
+				C2410469221CEB2E0047DB3B /* CodableSample.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -384,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				C2E36D4E2203D5E9000CE36B /* KeyPathSampleTest.swift */,
+				C241046C221CED650047DB3B /* CodableSampleTests.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -561,6 +568,7 @@
 				0235A0E122187C430057CFAF /* Adapter.swift in Sources */,
 				0284CDAA2187C1F0008B1A13 /* ViewController.swift in Sources */,
 				0286EFBD221A8F7D0088140E /* ChainOfResponsibility.swift in Sources */,
+				C241046A221CEB2E0047DB3B /* CodableSample.swift in Sources */,
 				02F591C622175CBD004A815B /* AbstractFactory.swift in Sources */,
 				027889F222190E730021C03F /* Flyweight.swift in Sources */,
 				0235A0E7221890AD0057CFAF /* Compsite.swift in Sources */,
@@ -591,9 +599,11 @@
 				021D5DCB221410B100B7BD53 /* Singleton.swift in Sources */,
 				02FE9AA721892D5C001D4CC9 /* SortingTests.swift in Sources */,
 				021D5DCE2214131C00B7BD53 /* SingletonTests.swift in Sources */,
+				C241046D221CED650047DB3B /* CodableSampleTests.swift in Sources */,
 				0233314322155731009ACFA2 /* PrototypeTests.swift in Sources */,
 				C2E36D4F2203D5E9000CE36B /* KeyPathSampleTest.swift in Sources */,
 				024FE0E6218A33CC00A174D1 /* Searching.swift in Sources */,
+				C241046B221CEB2E0047DB3B /* CodableSample.swift in Sources */,
 				0235A0E222187C430057CFAF /* Adapter.swift in Sources */,
 				C2E36D4C2203D436000CE36B /* KeyPathSample.swift in Sources */,
 				0233314022154FFA009ACFA2 /* Prototype.swift in Sources */,
