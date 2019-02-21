@@ -62,6 +62,9 @@
 		C2E36D4B2203D436000CE36B /* KeyPathSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E36D4A2203D436000CE36B /* KeyPathSample.swift */; };
 		C2E36D4C2203D436000CE36B /* KeyPathSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E36D4A2203D436000CE36B /* KeyPathSample.swift */; };
 		C2E36D4F2203D5E9000CE36B /* KeyPathSampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E36D4E2203D5E9000CE36B /* KeyPathSampleTest.swift */; };
+		C2F0C365221E095900667CF4 /* CoolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F0C364221E095900667CF4 /* CoolButton.swift */; };
+		C2F0C367221E0D8F00667CF4 /* CoolButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F0C366221E0D8F00667CF4 /* CoolButtonViewController.swift */; };
+		C2F0C369221E2D4600667CF4 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F0C368221E2D4600667CF4 /* Drawing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +124,9 @@
 		C24935FC2208C48D005D0516 /* CodingPractices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingPractices.swift; sourceTree = "<group>"; };
 		C2E36D4A2203D436000CE36B /* KeyPathSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathSample.swift; sourceTree = "<group>"; };
 		C2E36D4E2203D5E9000CE36B /* KeyPathSampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathSampleTest.swift; sourceTree = "<group>"; };
+		C2F0C364221E095900667CF4 /* CoolButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolButton.swift; sourceTree = "<group>"; };
+		C2F0C366221E0D8F00667CF4 /* CoolButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolButtonViewController.swift; sourceTree = "<group>"; };
+		C2F0C368221E2D4600667CF4 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 		D1BD7F4876578321272428E2 /* Pods-ProgrammingAlgorithmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammingAlgorithmTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProgrammingAlgorithmTests/Pods-ProgrammingAlgorithmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D54ED17ABE0E0E63FD3872B1 /* Pods_ProgrammingAlgorithmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgrammingAlgorithmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF920D57611A482A82BE32E9 /* Pods_ProgrammingAlgorithm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgrammingAlgorithm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				0284CDA92187C1F0008B1A13 /* ViewController.swift */,
+				C2F0C366221E0D8F00667CF4 /* CoolButtonViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -343,6 +350,8 @@
 			isa = PBXGroup;
 			children = (
 				02E90445220FC68700D32963 /* LogInField.swift */,
+				C2F0C364221E095900667CF4 /* CoolButton.swift */,
+				C2F0C368221E2D4600667CF4 /* Drawing.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -570,6 +579,7 @@
 				02E90446220FC68700D32963 /* LogInField.swift in Sources */,
 				02CD4D782187FAB700C1DA1D /* Queue.swift in Sources */,
 				0235A0E4221884E10057CFAF /* Bridge.swift in Sources */,
+				C2F0C369221E2D4600667CF4 /* Drawing.swift in Sources */,
 				02CD4D752187F96C00C1DA1D /* Stack.swift in Sources */,
 				0235A0E122187C430057CFAF /* Adapter.swift in Sources */,
 				0232A488221D3A0F00895C6F /* Command.swift in Sources */,
@@ -578,8 +588,10 @@
 				C241046A221CEB2E0047DB3B /* CodableSample.swift in Sources */,
 				02F591C622175CBD004A815B /* AbstractFactory.swift in Sources */,
 				027889F222190E730021C03F /* Flyweight.swift in Sources */,
+				C2F0C365221E095900667CF4 /* CoolButton.swift in Sources */,
 				0235A0E7221890AD0057CFAF /* Compsite.swift in Sources */,
 				027889F0221904FD0021C03F /* Facade.swift in Sources */,
+				C2F0C367221E0D8F00667CF4 /* CoolButtonViewController.swift in Sources */,
 				021D5DCA221410B100B7BD53 /* Singleton.swift in Sources */,
 				02F591C522175CBD004A815B /* Builder.swift in Sources */,
 				0232A48A221D48E100895C6F /* Interpreter.swift in Sources */,

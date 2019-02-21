@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gxm-wj-0MS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,24 +18,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5pQ-4X-n0a">
-                                <rect key="frame" x="10" y="30" width="355" height="134"/>
+                                <rect key="frame" x="10" y="30" width="355" height="154"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DC9-00-21u" customClass="LogInField" customModule="ProgrammingAlgorithm" customModuleProvider="target">
-                                        <rect key="frame" x="77.5" y="0.0" width="200" height="40"/>
+                                        <rect key="frame" x="77.5" y="0.0" width="200" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isEmailType" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFP-Jg-vVb" customClass="LogInField" customModule="ProgrammingAlgorithm" customModuleProvider="target">
-                                        <rect key="frame" x="77.5" y="52" width="200" height="40"/>
+                                        <rect key="frame" x="77.5" y="62" width="200" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isEmailType" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwj-gn-isW">
-                                        <rect key="frame" x="158.5" y="104" width="38" height="30"/>
+                                        <rect key="frame" x="158.5" y="124" width="38" height="30"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="attempLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sld-Nm-Q2u"/>
@@ -59,7 +59,82 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+            <point key="canvasLocation" x="-126" y="147"/>
+        </scene>
+        <!--Cool Button View Controller-->
+        <scene sceneID="bTG-ca-lh9">
+            <objects>
+                <viewController id="Gxm-wj-0MS" customClass="CoolButtonViewController" customModule="ProgrammingAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="egT-vc-xmQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wKs-60-KTU">
+                                <rect key="frame" x="20" y="423" width="335" height="194"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ytl-r8-R96">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rAQ-1P-Mxx">
+                                        <rect key="frame" x="-2" y="28" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="hueValueChanged:" destination="Gxm-wj-0MS" eventType="valueChanged" id="6za-Ox-W21"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7L-0l-m8m">
+                                        <rect key="frame" x="0.0" y="68" width="335" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qVc-Eh-at7">
+                                        <rect key="frame" x="-2" y="96" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="saturationValueChanged:" destination="Gxm-wj-0MS" eventType="valueChanged" id="BwY-uR-uVr"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brightness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QE0-DI-dc1">
+                                        <rect key="frame" x="0.0" y="136" width="335" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xDl-f8-XAR">
+                                        <rect key="frame" x="-2" y="164" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="brightnessValueChanged:" destination="Gxm-wj-0MS" eventType="valueChanged" id="QXC-mP-t7q"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKp-v6-jgk" customClass="CoolButton" customModule="ProgrammingAlgorithm" customModuleProvider="target">
+                                <rect key="frame" x="20" y="203" width="335" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="LoB-mT-N1b"/>
+                                    <constraint firstAttribute="height" constant="45" id="wJ1-o7-GY0"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wKs-60-KTU" firstAttribute="leading" secondItem="ncB-ug-3LS" secondAttribute="leading" constant="20" id="lXa-lI-WZy"/>
+                            <constraint firstItem="wKs-60-KTU" firstAttribute="top" secondItem="EKp-v6-jgk" secondAttribute="bottom" constant="175" id="oPo-Vf-7wt"/>
+                            <constraint firstItem="ncB-ug-3LS" firstAttribute="trailing" secondItem="wKs-60-KTU" secondAttribute="trailing" constant="20" id="pGd-Sy-Cyf"/>
+                            <constraint firstItem="EKp-v6-jgk" firstAttribute="centerX" secondItem="ncB-ug-3LS" secondAttribute="centerX" id="vkE-KB-1qy"/>
+                            <constraint firstItem="ncB-ug-3LS" firstAttribute="bottom" secondItem="wKs-60-KTU" secondAttribute="bottom" constant="50" id="w7S-72-6PA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ncB-ug-3LS"/>
+                    </view>
+                    <connections>
+                        <outlet property="coolButton" destination="EKp-v6-jgk" id="AsV-jX-SYT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDU-Pi-kgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="125.4872563718141"/>
         </scene>
     </scenes>
 </document>
