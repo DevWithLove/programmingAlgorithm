@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02018F73221E9EE500C1014F /* IteratorPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02018F72221E9EE500C1014F /* IteratorPattern.swift */; };
+		02018F75221EA74300C1014F /* MementoPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02018F74221EA74300C1014F /* MementoPattern.swift */; };
 		021D5DCA221410B100B7BD53 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DC9221410B100B7BD53 /* Singleton.swift */; };
 		021D5DCB221410B100B7BD53 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DC9221410B100B7BD53 /* Singleton.swift */; };
 		021D5DCE2214131C00B7BD53 /* SingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DCD2214131C00B7BD53 /* SingletonTests.swift */; };
@@ -78,6 +80,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02018F72221E9EE500C1014F /* IteratorPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorPattern.swift; sourceTree = "<group>"; };
+		02018F74221EA74300C1014F /* MementoPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoPattern.swift; sourceTree = "<group>"; };
 		021D5DC9221410B100B7BD53 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		021D5DCD2214131C00B7BD53 /* SingletonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonTests.swift; sourceTree = "<group>"; };
 		0232A487221D3A0F00895C6F /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
@@ -333,6 +337,8 @@
 				0286EFBC221A8F7D0088140E /* ChainOfResponsibility.swift */,
 				0232A487221D3A0F00895C6F /* Command.swift */,
 				0232A489221D48E100895C6F /* Interpreter.swift */,
+				02018F72221E9EE500C1014F /* IteratorPattern.swift */,
+				02018F74221EA74300C1014F /* MementoPattern.swift */,
 			);
 			path = Behavioral;
 			sourceTree = "<group>";
@@ -581,8 +587,10 @@
 				0235A0E4221884E10057CFAF /* Bridge.swift in Sources */,
 				C2F0C369221E2D4600667CF4 /* Drawing.swift in Sources */,
 				02CD4D752187F96C00C1DA1D /* Stack.swift in Sources */,
+				02018F73221E9EE500C1014F /* IteratorPattern.swift in Sources */,
 				0235A0E122187C430057CFAF /* Adapter.swift in Sources */,
 				0232A488221D3A0F00895C6F /* Command.swift in Sources */,
+				02018F75221EA74300C1014F /* MementoPattern.swift in Sources */,
 				0284CDAA2187C1F0008B1A13 /* ViewController.swift in Sources */,
 				0286EFBD221A8F7D0088140E /* ChainOfResponsibility.swift in Sources */,
 				C241046A221CEB2E0047DB3B /* CodableSample.swift in Sources */,

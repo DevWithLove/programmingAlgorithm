@@ -112,7 +112,7 @@ class PrototypeTests: XCTestCase {
     // can insure that no wasted work is done.
     // this feature specifically added to swift collections, you dont get it for free for custom data types.
     
-    var numbers: Array<Int> = [1,2,3]
+    let numbers: Array<Int> = [1,2,3]
     var numbersCopy = numbers
     
     print(MemoryUtil.address(numbers))  // both array point to the same data
@@ -124,13 +124,13 @@ class PrototypeTests: XCTestCase {
     print(MemoryUtil.address(numbersCopy))
     
     // Class type
-    var contactClassPrototype = ContactClass(firstName: "Joe", lastName: "Black", workAddress: WorkAddress(streetAddress: "1, brannon street", city: "Los Angeles", zip: "1221"))
-    var anotherContactClass = contactClassPrototype
+    let contactClassPrototype = ContactClass(firstName: "Joe", lastName: "Black", workAddress: WorkAddress(streetAddress: "1, brannon street", city: "Los Angeles", zip: "1221"))
+    let anotherContactClass = contactClassPrototype
     
     print(MemoryUtil.address(contactClassPrototype))  // memory addresses are Same
     print(MemoryUtil.address(anotherContactClass))
     
-    var contactClassCopy = contactClassPrototype.copy() as! ContactClass
+    let contactClassCopy = contactClassPrototype.copy() as! ContactClass
     
     print(contactClassPrototype)
     print(contactClassCopy)
@@ -139,9 +139,9 @@ class PrototypeTests: XCTestCase {
     // means that we copied the address of an object rather than cloning the object itself.
     
     
-    var contactC = ContactClass(firstName: "Joe", lastName: "Black", workAddress: WorkAddress(streetAddress: "1, brannon street", city: "Los Angeles", zip: "1221"))
+    let contactC = ContactClass(firstName: "Joe", lastName: "Black", workAddress: WorkAddress(streetAddress: "1, brannon street", city: "Los Angeles", zip: "1221"))
     
-    var contactCCopy = contactC.copy() as! ContactClass
+    let contactCCopy = contactC.copy() as! ContactClass
     print(MemoryUtil.address(contactC))  // memory addresses are different
     print(MemoryUtil.address(contactCCopy)) // however, the workAddress is not copyed, if we change one workaddress, the other workaddress will change as well. both contact.workaddress will point to the same memory address
     
