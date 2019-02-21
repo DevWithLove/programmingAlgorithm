@@ -52,6 +52,7 @@
 		02F591C722175CBD004A815B /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F591C422175CBD004A815B /* Factory.swift */; };
 		02FE13E4221F333400A75CD7 /* MementoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE13E3221F333400A75CD7 /* MementoTests.swift */; };
 		02FE13E5221F337000A75CD7 /* MementoPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02018F74221EA74300C1014F /* MementoPattern.swift */; };
+		02FE13E7221F3A1600A75CD7 /* ObserverPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE13E6221F3A1600A75CD7 /* ObserverPattern.swift */; };
 		02FE9AA321892AA7001D4CC9 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE9AA221892AA7001D4CC9 /* InsertionSort.swift */; };
 		02FE9AA421892AA7001D4CC9 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE9AA221892AA7001D4CC9 /* InsertionSort.swift */; };
 		02FE9AA721892D5C001D4CC9 /* SortingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FE9AA621892D5C001D4CC9 /* SortingTests.swift */; };
@@ -120,6 +121,7 @@
 		02F591C322175CBD004A815B /* AbstractFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
 		02F591C422175CBD004A815B /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		02FE13E3221F333400A75CD7 /* MementoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoTests.swift; sourceTree = "<group>"; };
+		02FE13E6221F3A1600A75CD7 /* ObserverPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverPattern.swift; sourceTree = "<group>"; };
 		02FE9AA221892AA7001D4CC9 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		02FE9AA621892D5C001D4CC9 /* SortingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingTests.swift; sourceTree = "<group>"; };
 		203B8025B5E601591443F8A5 /* Pods-ProgrammingAlgorithm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgrammingAlgorithm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProgrammingAlgorithm/Pods-ProgrammingAlgorithm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				0232A489221D48E100895C6F /* Interpreter.swift */,
 				02018F72221E9EE500C1014F /* IteratorPattern.swift */,
 				02018F74221EA74300C1014F /* MementoPattern.swift */,
+				02FE13E6221F3A1600A75CD7 /* ObserverPattern.swift */,
 			);
 			path = Behavioral;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 				027889F0221904FD0021C03F /* Facade.swift in Sources */,
 				C2F0C367221E0D8F00667CF4 /* CoolButtonViewController.swift in Sources */,
 				021D5DCA221410B100B7BD53 /* Singleton.swift in Sources */,
+				02FE13E7221F3A1600A75CD7 /* ObserverPattern.swift in Sources */,
 				02F591C522175CBD004A815B /* Builder.swift in Sources */,
 				0232A48A221D48E100895C6F /* Interpreter.swift in Sources */,
 				024FE0E2218A303800A174D1 /* BinarySearch.swift in Sources */,
