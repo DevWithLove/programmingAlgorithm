@@ -64,6 +64,9 @@
 		C24935FB2208C3BB005D0516 /* CodingPracticesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24935FA2208C3BB005D0516 /* CodingPracticesTests.swift */; };
 		C24935FD2208C48D005D0516 /* CodingPractices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24935FC2208C48D005D0516 /* CodingPractices.swift */; };
 		C24935FE2208C842005D0516 /* CodingPractices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24935FC2208C48D005D0516 /* CodingPractices.swift */; };
+		C24F4F9A221F799400BAE7BF /* StatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24F4F99221F799400BAE7BF /* StatePattern.swift */; };
+		C24F4F9C221F875200BAE7BF /* MediatorPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24F4F9B221F875200BAE7BF /* MediatorPattern.swift */; };
+		C24F4FA0221F92A900BAE7BF /* readmeBehavioral in Resources */ = {isa = PBXBuildFile; fileRef = C24F4F9F221F92A900BAE7BF /* readmeBehavioral */; };
 		C2E36D4B2203D436000CE36B /* KeyPathSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E36D4A2203D436000CE36B /* KeyPathSample.swift */; };
 		C2E36D4C2203D436000CE36B /* KeyPathSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E36D4A2203D436000CE36B /* KeyPathSample.swift */; };
 		C2E36D4F2203D5E9000CE36B /* KeyPathSampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E36D4E2203D5E9000CE36B /* KeyPathSampleTest.swift */; };
@@ -131,6 +134,9 @@
 		C241046C221CED650047DB3B /* CodableSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableSampleTests.swift; sourceTree = "<group>"; };
 		C24935FA2208C3BB005D0516 /* CodingPracticesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingPracticesTests.swift; sourceTree = "<group>"; };
 		C24935FC2208C48D005D0516 /* CodingPractices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingPractices.swift; sourceTree = "<group>"; };
+		C24F4F99221F799400BAE7BF /* StatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePattern.swift; sourceTree = "<group>"; };
+		C24F4F9B221F875200BAE7BF /* MediatorPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorPattern.swift; sourceTree = "<group>"; };
+		C24F4F9F221F92A900BAE7BF /* readmeBehavioral */ = {isa = PBXFileReference; lastKnownFileType = text; path = readmeBehavioral; sourceTree = "<group>"; };
 		C2E36D4A2203D436000CE36B /* KeyPathSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathSample.swift; sourceTree = "<group>"; };
 		C2E36D4E2203D5E9000CE36B /* KeyPathSampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathSampleTest.swift; sourceTree = "<group>"; };
 		C2F0C364221E095900667CF4 /* CoolButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolButton.swift; sourceTree = "<group>"; };
@@ -346,6 +352,9 @@
 				02018F72221E9EE500C1014F /* IteratorPattern.swift */,
 				02018F74221EA74300C1014F /* MementoPattern.swift */,
 				02FE13E6221F3A1600A75CD7 /* ObserverPattern.swift */,
+				C24F4F99221F799400BAE7BF /* StatePattern.swift */,
+				C24F4F9B221F875200BAE7BF /* MediatorPattern.swift */,
+				C24F4F9F221F92A900BAE7BF /* readmeBehavioral */,
 			);
 			path = Behavioral;
 			sourceTree = "<group>";
@@ -510,6 +519,7 @@
 				027889F4221916EF0021C03F /* readMe in Resources */,
 				02F591C122175C7D004A815B /* readme in Resources */,
 				0284CDB22187C1F2008B1A13 /* LaunchScreen.storyboard in Resources */,
+				C24F4FA0221F92A900BAE7BF /* readmeBehavioral in Resources */,
 				0284CDAF2187C1F2008B1A13 /* Assets.xcassets in Resources */,
 				0284CDAD2187C1F0008B1A13 /* Main.storyboard in Resources */,
 			);
@@ -595,6 +605,7 @@
 				C2F0C369221E2D4600667CF4 /* Drawing.swift in Sources */,
 				02CD4D752187F96C00C1DA1D /* Stack.swift in Sources */,
 				02018F73221E9EE500C1014F /* IteratorPattern.swift in Sources */,
+				C24F4F9C221F875200BAE7BF /* MediatorPattern.swift in Sources */,
 				0235A0E122187C430057CFAF /* Adapter.swift in Sources */,
 				0232A488221D3A0F00895C6F /* Command.swift in Sources */,
 				02018F75221EA74300C1014F /* MementoPattern.swift in Sources */,
@@ -606,6 +617,7 @@
 				C2F0C365221E095900667CF4 /* CoolButton.swift in Sources */,
 				0235A0E7221890AD0057CFAF /* Compsite.swift in Sources */,
 				027889F0221904FD0021C03F /* Facade.swift in Sources */,
+				C24F4F9A221F799400BAE7BF /* StatePattern.swift in Sources */,
 				C2F0C367221E0D8F00667CF4 /* CoolButtonViewController.swift in Sources */,
 				021D5DCA221410B100B7BD53 /* Singleton.swift in Sources */,
 				02FE13E7221F3A1600A75CD7 /* ObserverPattern.swift in Sources */,

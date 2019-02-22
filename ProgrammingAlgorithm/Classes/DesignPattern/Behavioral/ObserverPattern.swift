@@ -39,11 +39,6 @@ struct BidNotificationNames {
     static let bidNotification = "bidNotification"
 }
 
-struct BidNotification {
-    var bid: Float
-    var message: String?
-}
-
 struct Auctioneer {
     private var bidders = [Bidder]()
 
