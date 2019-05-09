@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gxm-wj-0MS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CLo-Qd-uES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -135,6 +135,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qDU-Pi-kgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="852" y="125.4872563718141"/>
+        </scene>
+        <!--Mask Text Field View Controller-->
+        <scene sceneID="Eug-xT-4bU">
+            <objects>
+                <viewController id="CLo-Qd-uES" customClass="MaskTextFieldViewController" customModule="ProgrammingAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gE2-s9-01U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tlN-YZ-M8M">
+                                <rect key="frame" x="33" y="113" width="310" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tlN-YZ-M8M" firstAttribute="top" secondItem="Yga-MK-DSz" secondAttribute="top" constant="93" id="3kJ-AJ-159"/>
+                            <constraint firstItem="tlN-YZ-M8M" firstAttribute="leading" secondItem="Yga-MK-DSz" secondAttribute="leading" constant="33" id="G0b-W7-kc0"/>
+                            <constraint firstItem="Yga-MK-DSz" firstAttribute="trailing" secondItem="tlN-YZ-M8M" secondAttribute="trailing" constant="32" id="ogx-qE-TPt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yga-MK-DSz"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="tlN-YZ-M8M" id="tLB-8Y-eqA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uje-bU-V1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663.2" y="47.226386806596707"/>
         </scene>
     </scenes>
 </document>

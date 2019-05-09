@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		02018F73221E9EE500C1014F /* IteratorPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02018F72221E9EE500C1014F /* IteratorPattern.swift */; };
 		02018F75221EA74300C1014F /* MementoPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02018F74221EA74300C1014F /* MementoPattern.swift */; };
+		0219839422841A2200F03F1D /* MaskTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0219839322841A2200F03F1D /* MaskTextFieldViewController.swift */; };
+		0219839922841C1500F03F1D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0219839822841C1500F03F1D /* UIViewExtensions.swift */; };
 		021D5DCA221410B100B7BD53 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DC9221410B100B7BD53 /* Singleton.swift */; };
 		021D5DCB221410B100B7BD53 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DC9221410B100B7BD53 /* Singleton.swift */; };
 		021D5DCE2214131C00B7BD53 /* SingletonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D5DCD2214131C00B7BD53 /* SingletonTests.swift */; };
@@ -88,6 +90,8 @@
 /* Begin PBXFileReference section */
 		02018F72221E9EE500C1014F /* IteratorPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorPattern.swift; sourceTree = "<group>"; };
 		02018F74221EA74300C1014F /* MementoPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoPattern.swift; sourceTree = "<group>"; };
+		0219839322841A2200F03F1D /* MaskTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskTextFieldViewController.swift; sourceTree = "<group>"; };
+		0219839822841C1500F03F1D /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		021D5DC9221410B100B7BD53 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		021D5DCD2214131C00B7BD53 /* SingletonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonTests.swift; sourceTree = "<group>"; };
 		0232A487221D3A0F00895C6F /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
@@ -167,6 +171,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0219839722841BF600F03F1D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0219839822841C1500F03F1D /* UIViewExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		021D5DC822140EAB00B7BD53 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +297,7 @@
 		0284CDC82187C237008B1A13 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0219839722841BF600F03F1D /* Helpers */,
 				021D5DC822140EAB00B7BD53 /* DesignPattern */,
 				02E90444220FC33E00D32963 /* CustomView */,
 				C2E36D492203D3EC000CE36B /* Features */,
@@ -312,6 +325,7 @@
 			children = (
 				0284CDA92187C1F0008B1A13 /* ViewController.swift */,
 				C2F0C366221E0D8F00667CF4 /* CoolButtonViewController.swift */,
+				0219839322841A2200F03F1D /* MaskTextFieldViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -541,7 +555,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ProgrammingAlgorithmTests/Pods-ProgrammingAlgorithmTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ProgrammingAlgorithmTests/Pods-ProgrammingAlgorithmTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -550,7 +564,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProgrammingAlgorithmTests/Pods-ProgrammingAlgorithmTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProgrammingAlgorithmTests/Pods-ProgrammingAlgorithmTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A82556533FD898E10D88D9DB /* [CP] Check Pods Manifest.lock */ = {
@@ -604,6 +618,7 @@
 				0235A0E4221884E10057CFAF /* Bridge.swift in Sources */,
 				C2F0C369221E2D4600667CF4 /* Drawing.swift in Sources */,
 				02CD4D752187F96C00C1DA1D /* Stack.swift in Sources */,
+				0219839422841A2200F03F1D /* MaskTextFieldViewController.swift in Sources */,
 				02018F73221E9EE500C1014F /* IteratorPattern.swift in Sources */,
 				C24F4F9C221F875200BAE7BF /* MediatorPattern.swift in Sources */,
 				0235A0E122187C430057CFAF /* Adapter.swift in Sources */,
@@ -629,6 +644,7 @@
 				027889F62219176B0021C03F /* Proxy.swift in Sources */,
 				C2E36D4B2203D436000CE36B /* KeyPathSample.swift in Sources */,
 				0284CDCD2187C3C0008B1A13 /* ArrayCompareExtensions.swift in Sources */,
+				0219839922841C1500F03F1D /* UIViewExtensions.swift in Sources */,
 				02F591C722175CBD004A815B /* Factory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

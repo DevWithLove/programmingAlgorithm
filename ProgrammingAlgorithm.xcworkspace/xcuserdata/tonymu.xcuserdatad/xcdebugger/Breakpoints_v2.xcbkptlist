@@ -33,38 +33,6 @@
             endingLineNumber = "62"
             landmarkName = "copy(with:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "default argument 0 of ProgrammingAlgorithmTests.(ContactClass in _40DA489A1F4906F145146ACDBE22B691).copy(with: Swift.Optional&lt;ObjectiveC.NSZone&gt;) -&gt; Any"
-                  moduleName = "ProgrammingAlgorithmTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tonymu/Dev/programmingAlgorithm/ProgrammingAlgorithmTests/DesignPatterns/PrototypeTests.swift"
-                  timestampString = "572470895.695513"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ProgrammingAlgorithmTests.(ContactClass in _40DA489A1F4906F145146ACDBE22B691).copy(with: Swift.Optional&lt;ObjectiveC.NSZone&gt;) -&gt; Any"
-                  moduleName = "ProgrammingAlgorithmTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/tonymu/Dev/programmingAlgorithm/ProgrammingAlgorithmTests/DesignPatterns/PrototypeTests.swift"
-                  timestampString = "572470895.697222"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "41">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -80,6 +48,38 @@
             startingLineNumber = "40"
             endingLineNumber = "40"
             landmarkName = "testMemento()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProgrammingAlgorithm/Classes/ViewControllers/MaskTextFieldViewController.swift"
+            timestampString = "579087396.172431"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
+            landmarkName = "textDidChange()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ProgrammingAlgorithm/Classes/ViewControllers/MaskTextFieldViewController.swift"
+            timestampString = "579087396.173265"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "formatText(newText:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
